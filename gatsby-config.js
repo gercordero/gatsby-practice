@@ -5,6 +5,23 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: "Gatsby Practice",
+    description: "This is a project made for practicing Gatsby :)",
+    author: "@ger.cordero",
+    data: ["item1", "item2"],
+    person: { name: "german", age: 24 },
+  },
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets/`,
+      },
+    },
+  ],
 }
