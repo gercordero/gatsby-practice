@@ -1,0 +1,17 @@
+.single-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 20rem;
+  height: 70vh;
+}
+
+.single-product aside {
+  margin: 0 1rem;
+  flex: 1 1 20rem;
+}
+
+.single-product article {
+  margin: 0 1rem;
+  flex: 3 1 20rem;
+}

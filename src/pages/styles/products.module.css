@@ -1,0 +1,21 @@
+.products {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.products div {
+  height: 30rem;
+}
+
+.products article {
+  margin: auto 1rem;
+  flex: 1 1 30rem;
+}
+
+.products h3 {
+  text-transform: capitalize;
+}
